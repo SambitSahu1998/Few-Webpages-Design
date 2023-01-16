@@ -1,0 +1,118 @@
+#test1_form{
+    margin: 10 auto;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 50%;
+    padding:20px;
+}
+#test1_h1{
+
+    text-align: center;
+    font-family: 'Gill Sans';
+}
+.test1_input{
+    margin-top: 20px;
+    width: 350px;
+    padding: 10px;
+    border-radius: 4;
+}
+#test1_button{
+    width: 350px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color:white;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(0, 255, 247), purple );
+}
+#test1_para{
+    margin-top:30px;
+    font-size: 17px;
+}
+
+#test1_logo{
+    float:left;
+    width:78%;
+}
+
+#test1_fb-logo{
+    padding:10px;
+    border: 2px solid #000;
+    margin-left: 205px;
+    float: left;
+    height: 30px;
+    width: 23%;
+    border-radius: 5px;
+    
+}
+
+#test1_google-logo{
+    padding:10px;
+    margin-left: 30px;;
+    border: 2px solid #000;
+    float: left;
+    height: 30px;
+    width: 23%;
+    border-radius: 5px;
+}
+
+
+
+#test_img1{
+    margin-left: 16px;
+    float: left;
+    width:30px;
+    height:30px;
+}
+
+#test_t1{
+    font-weight: bold;
+    margin-top:7px;
+    margin-left: 15px;
+    float: left;
+    text-decoration: none;
+    color:#3f00ff;
+}
+
+
+#test_t2{
+    font-weight: bold;
+    margin-top:7px;
+    margin-left: 15px;
+    float: left;
+    text-decoration: none;
+    color:#a70d2a;
+}
+
+#test1_sign{
+    font-size: 16px;
+    font-family: 'Lucida Sans';
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+#test4_design{
+    height: 100%; margin: 0; padding: 0;
+}
+
+#test4_table_design{
+    border-collapse: collapse;
+     min-height: 100%; 
+     width: 100%;
+}
+
+#test4_row{
+    font-size: 20px; height: 25px;
+}
+#test4_table_design, #test4_table_design td, #test4_table_design th{
+    border: 1px solid #000;
+}
+
+#test4_footer{
+    height: 20px; font-weight: bold;
+}

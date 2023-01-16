@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .main {
+        margin: 0 auto;
+        border: 2px solid;
+        background-color: rgb(145, 238, 169);
+        width: 30%;
+        font-family: "Segoe UI";
+        color: green;
+        padding: 10px;
+      }
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    </style>
+    <script>
+      function validate() {
+        var regName = /([a-zA-Z][a-zA-Z]*)$/;
+        var phoneNo = /^\d{10}$/;
+        var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var namef = document.getElementById("fname").value;
+        var namel = document.getElementById("lname").value;
+        var ph = document.getElementById("phone").value;
+        var em = document.getElementById("email").value;
+        if (!regName.test(namef)) {
+          alert("Please Enter a Valid First Name");
+          document.getElementById("fname").focus();
+          return false;
+        }
+        if (!regName.test(namel)) {
+          alert("Please Enter a Valid Last Name");
+          document.getElementById("lname").focus();
+          return false;
+        }
+        if (!phoneNo.test(ph)) {
+          alert("Please Enter a valid 10 Digit Phone Number");
+          document.getElementById("phone").focus();
+          return false;
+        }
+        if (!email.test(em)) {
+          alert("Please Enter a Email Id");
+          document.getElementById("email").focus();
+          return false;
+        } else {
+          alert("Valid Data Being Provided");
+          return true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <form style="width: 100%">
+        <h1 style="text-align: center">Farmer Registration Form</h1>
+        <div style="margin-top: 15px">
+          <div>Name:</div>
+          <div style="margin-top: 10px; width: 100%">
+            <input
+              type="text"
+              id="fname"
+              placeholder="First"
+              style="width: 47.5%"
+            />
+            <input
+              type="text"
+              id="lname"
+              placeholder="Last"
+              style="width: 47.5%"
+            />
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <div>Email:</div>
+          <div style="margin-top: 10px">
+            <input style="width: 97.5%" type="text" id="email" />
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <div>Type of Dairy Cattle:</div>
+          <div style="margin-top: 10px">
+            <select style="width: 98.5%">
+              <option>Brown Swiss Cattle</option>
+              <option>Ayrshire cattle</option>
+              <option>French Brown</option>
+            </select>
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <div>Center Name:</div>
+          <div style="margin-top: 10px">
+            <input style="width: 97.5%" type="text" />
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <div>Phone:</div>
+          <div style="margin-top: 10px">
+            <input style="width: 97.5%" type="tel" id="phone" />
+          </div>
+        </div>
+        <div style="margin-top: 15px">
+          <div>Farmer Address:</div>
+          <div style="margin-top: 10px">
+            <input
+              style="width: 97.5%"
+              type="text"
+              placeholder="Street Address"
+            />
+          </div>
+          <div style="margin-top: 10px">
+            <input
+              style="width: 97.5%"
+              type="text"
+              placeholder="Street Address Lane 2"
+            />
+          </div>
+          <div style="float: left; width: 100%; margin-top: 10px">
+            <div>
+              <input
+                type="text"
+                placeholder="City"
+                style="float: left; width: 46.5%; margin-right: 15px"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="region"
+                style="float: left; width: 46%"
+              />
+            </div>
+          </div>
+        </div>
+        <div style="float: left; width: 100%; margin-top: 10px">
+          <div>
+            <input
+              type="number"
+              placeholder="Postal/Zip Code"
+              style="float: left; width: 46.5%; margin-right: 15px"
+            />
+          </div>
+          <div>
+            <select style="float: left; width: 47.5%">
+              <option>Karnataka</option>
+              <option>Jharkhand</option>
+              <option>Chattisgarh</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <center>
+            <button
+              style="
+                margin-top: 20px;
+                margin-bottom: 20px;
+                text-align: center;
+                background-color: rgb(127, 165, 62);
+              "
+              onclick="validate();"
+            >
+              SEND
+            </button>
+          </center>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
